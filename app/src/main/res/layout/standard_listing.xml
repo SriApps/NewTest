@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:layout_margin="@dimen/defaultMargin"
+    card_view:cardCornerRadius="@dimen/defaultMargin">
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple_effect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/colorAccent"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleHover="false"
+        app:mrl_rippleOverlay="true">
+
+        <RelativeLayout
+            android:id="@+id/listing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layoutHeight">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/progressBarHeight"
+                android:layout_above="@+id/agent_IV"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/progressBarMarginTop"
+                android:indeterminate="false" />
+
+
+            <ImageView
+                android:id="@+id/property_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ImageViewHeight"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/property_image_view" />
+
+            <TextView
+                android:id="@+id/title_TV"
+                android:layout_width="@dimen/titleTextViewWidth"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/property_image_view"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/defaultMargin"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/defaultMargin" />
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_width="@dimen/titleTextViewWidth"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_TV"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/defaultMargin"
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="@dimen/defaultMargin" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/agent_IV"
+                android:layout_width="@dimen/circularImageViewWidth"
+                android:layout_height="@dimen/circularImageViewHeight"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/circleImageViewMarginRight"
+                android:layout_marginBottom="@dimen/circleImageViewMarginBottom"
+                android:textColor="@color/colorBlack"
+                app:civ_border_color="@color/colorBlack"
+                app:civ_border_width="1dp"
+                app:srcCompat="@color/colorPrimary"
+                android:layout_marginEnd="@dimen/circleImageViewMarginRight" />
+
+            <TextView
+                android:id="@+id/agent_name_TV"
+                android:layout_width="@dimen/agentNameTextViewWidth"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/agent_IV"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/agentNameTextViewMarginTop"
+                android:layout_marginRight="@dimen/agentNameTextViewMarginRight"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/agentNameTextViewMarginRight" />
+
+            <TextView
+                android:id="@+id/bedroom_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_tv"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/defaultMargin"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="@dimen/defaultMargin" />
+
+            <ImageView
+                android:id="@+id/bedroom_IV"
+                android:layout_width="@dimen/iconImageWidth"
+                android:layout_height="@dimen/iconImageHeight"
+                android:layout_alignTop="@+id/bedroom_TV"
+                android:layout_toEndOf="@+id/bedroom_TV"
+                android:layout_toRightOf="@+id/bedroom_TV"
+                android:background="@drawable/ic_hotel_black_24dp"
+                android:contentDescription="@string/bedrooms_image_view" />
+
+            <TextView
+                android:id="@+id/bathroom_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/bedroom_TV"
+                android:layout_toEndOf="@+id/bedroom_IV"
+                android:layout_toRightOf="@+id/bedroom_IV" />
+
+            <ImageView
+                android:id="@+id/bathroom_IV"
+                android:layout_width="@dimen/iconImageWidth"
+                android:layout_height="@dimen/iconImageHeight"
+                android:layout_alignTop="@+id/bathroom_TV"
+                android:layout_toEndOf="@+id/bathroom_TV"
+                android:layout_toRightOf="@+id/bathroom_TV"
+                android:background="@drawable/ic_hot_tub_black_24dp"
+                android:contentDescription="@string/bathroom_image_view" />
+
+            <TextView
+                android:id="@+id/carpark_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/bathroom_IV"
+                android:layout_toEndOf="@+id/bathroom_IV"
+                android:layout_toRightOf="@+id/bathroom_IV" />
+
+            <ImageView
+                android:id="@+id/carpark_IV"
+                android:layout_width="@dimen/iconImageWidth"
+                android:layout_height="@dimen/iconImageHeight"
+                android:layout_alignTop="@+id/carpark_TV"
+                android:layout_toEndOf="@+id/carpark_TV"
+                android:layout_toRightOf="@+id/carpark_TV"
+                android:background="@drawable/ic_directions_car_black_24dp"
+                android:contentDescription="@string/carpark_image_view" />
+
+
+        </RelativeLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+</android.support.v7.widget.CardView>

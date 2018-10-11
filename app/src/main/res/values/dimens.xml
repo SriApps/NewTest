@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="progressBarHeight">50dp</dimen>
+    <dimen name="layoutHeight">400dp</dimen>
+    <dimen name="ImageViewHeight">250dp</dimen>
+    <dimen name="circularImageViewHeight">60dp</dimen>
+    <dimen name="circularImageViewWidth">60dp</dimen>
+    <dimen name="iconImageHeight">20dp</dimen>
+    <dimen name="iconImageWidth">20dp</dimen>
+    <dimen name="progressBarMarginTop">80dp</dimen>
+    <dimen name="titleTextViewWidth">200dp</dimen>
+    <dimen name="defaultMargin">4dp</dimen>
+    <dimen name="defaultTextSize">20sp</dimen>
+    <dimen name="circleImageViewMarginRight">24dp</dimen>
+    <dimen name="circleImageViewMarginBottom">120dp</dimen>
+    <dimen name="agentNameTextViewWidth">80dp</dimen>
+    <dimen name="agentNameTextViewMarginTop">60dp</dimen>
+    <dimen name="agentNameTextViewMarginRight">16dp</dimen>
+    <dimen name="LeftFragementLayoutWidth">350dp</dimen>
+</resources>

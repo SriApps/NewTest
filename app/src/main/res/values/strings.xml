@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Test Sen</string>
+    <string name="premiumText">Premium</string>
+    <string name="todo">TODO</string>
+    <string name="property_image_view">Property Image View</string>
+    <string name="bedrooms_image_view">Bedrooms Image View</string>
+    <string name="bathroom_image_view">Bathroom Image View</string>
+    <string name="carpark_image_view">Carpark Image View</string>
+</resources>
